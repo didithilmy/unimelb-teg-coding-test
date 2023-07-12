@@ -10,4 +10,4 @@ COPY ./models /code/models
 ENV MODEL_PATH /code/models/model.pickle
 ENV PYTHONPATH=$PYTHONPATH:/code/app
 
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80", "--proxy-headers"]
