@@ -12,6 +12,15 @@ The server program will use the input to create a prediction, and output the pre
 The server program is implemented using [FastAPI](https://github.com/tiangolo/fastapi). It exposes a REST API endpoint `/predict`.
 The input of the endpoint is a CSV file, encoded with multipart form-data and the field name is `file`.
 
+### Running with Docker
+
+The easiest way to get started is by using Docker. Run the following command to test it out quickly.
+```sh
+docker run --rm -p 8000:80 didithilmy/unimelb-teg-coding-test
+```
+
+Once this is done, you can access [http://localhost:8000](http://localhost:8000).
+
 ### Installing dependencies
 To install the dependencies, simply run:
 ```sh
